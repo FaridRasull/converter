@@ -54,16 +54,23 @@ async function getRates() {
 
 function cleanInput(input) {
   let value = input.value
-    .replace(/\./g, ',')
-    .replace(/[^0-9,]/g, '');
+    .replace(/\./g, ',')         
+    .replace(/[^0-9,]/g, '');     
 
   const parts = value.split(',');
   if (parts.length > 2) {
     value = parts[0] + ',' + parts.slice(1).join('');
   }
 
+  
+  if (parts.length === 2) {
+    parts[1] = parts[1].slice(0, 5);
+    value = parts[0] + ',' + parts[1];
+  }
+
   input.value = value;
 }
+
 
 function toNumber(value) {
   return parseFloat(value.replace(',', '.')) || 0;
