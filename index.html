@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-container">
+
+    <div class="logo">
+      <img src="img/Asset 1@3x 1.svg" class="logo-img" alt="logo">
+    </div>
+
+    <nav class="menu">
+      <a class="menu-item">БАНК</a>
+      <a class="menu-item">БИЗНЕС</a>
+      <a class="menu-item">ИНВЕСТИЦИИ</a>
+      <a class="menu-item">СТРАХОВАНИЕ</a>
+      <a class="menu-item">МОБАЙЛ</a>
+      <a class="menu-item">ПУТЕШЕСТВИЯ</a>
+      <a class="menu-item">РАЗВЛЕЧЕНИЯ</a>
+    </nav>
+
+    <button class="login-btn">ВОЙТИ</button>
+
+  </div>
+</header>
+
+<section class="converter">
+
+  <div class="offline-text" hidden>
+    Internet yoxdur
+  </div>
+
+  <h1 class="title">Конвертер валют онлайн</h1>
+
+  <div class="converter-container">
+
+    <div class="box">
+      <p class="label">У меня есть</p>
+
+      <div class="tabs">
+        <div class="tab active">RUB</div>
+        <div class="tab">USD</div>
+        <div class="tab">EUR</div>
+        <div class="tab">GBP</div>
+      </div>
+
+      <div class="input-box">
+        <input type="text" class="amount left" value="0">
+        <div class="rate-text">Курс из API</div>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="box">
+      <p class="label">Хочу приобрести</p>
+
+      <div class="tabs">
+        <div class="tab">RUB</div>
+        <div class="tab active">USD</div>
+        <div class="tab">EUR</div>
+        <div class="tab">GBP</div>
+      </div>
+
+      <div class="input-box">
+        <input type="text" class="amount right" value="0">
+        <div class="rate-text">Курс из API</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
