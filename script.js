@@ -11,7 +11,7 @@ let rightCurrency = 'USD';
 let activeSide = 'left';
 let isOnline = navigator.onLine;
 
-const API_KEY = '3d990d76138302c27fcc219933f3835f';
+const API_KEY = '7888134c960d64b02aa282b0e2a3962d';
 let rates = {};
 
 function setEnabled(enabled) {
